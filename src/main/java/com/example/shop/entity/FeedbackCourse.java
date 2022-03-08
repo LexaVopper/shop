@@ -1,7 +1,7 @@
 package com.example.shop.entity;
 
 
-import com.example.shop.Enums.Reaction;
+import com.example.shop.enums.Reaction;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

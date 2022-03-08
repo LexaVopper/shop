@@ -24,4 +24,22 @@ public class ChapterController {
             return ResponseEntity.badRequest().body("Chapter not found");
         }
     }
+
+    @GetMapping
+    public ResponseEntity getChapter(@RequestParam(required = false) Long id) {
+        try {
+            return ResponseEntity.ok(chapterService.getChapter(id));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Chapter not found");
+        }
+    }
+
+    @GetMapping(path = "/all")
+    public ResponseEntity getAll() {
+        try {
+            return ResponseEntity.ok(chapterService.getAll());
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body("Chapter not found");
+        }
+    }
 }

@@ -1,9 +1,7 @@
 package com.example.shop.entity;
 
 
-import com.example.shop.Enums.Reaction;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.example.shop.Enums;
+package com.example.shop.enums;
 
 public enum Reaction {
     LIKE,
